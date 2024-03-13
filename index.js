@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 });
 
 
-const statusMessages = ["Đàng chơi City","🎉 WELCOME TO 2024 🎉","🏢 UNIFIED POLICE DEPARTMENT 🏢","⛔ LOS SANTOS POLICE DEPARTMENT ⛔","Nhận setup Bot & Discord theo yêu cầu 🛠️","📞 Contact Discord: thuyalwayssmiles93"];
+const statusMessages = ["Đang chơi City","🎉 WELCOME TO 2024 🎉","🏢 UNIFIED POLICE DEPARTMENT 🏢","⛔ LOS SANTOS POLICE DEPARTMENT ⛔","Nhận setup Bot & Discord theo yêu cầu 🛠️","📞 Contact Discord: thuyalwayssmiles93"];
 
 
 let currentIndex = 0;
