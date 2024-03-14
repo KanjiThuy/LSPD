@@ -54,33 +54,7 @@ function updateStatusAndSendMessages() {
 
   currentIndex = (currentIndex + 1) % statusMessages.length;
 }
-const { ApplicationCommandOptionType } = require("discord.js");
 
-module.exports = {
-  name: "chat-by-bot",
-  description: "sử dụng bot để chat.",
-  options: [
-    {
-      name: "content",
-      description: "nội dung chat.",
-      type: ApplicationCommandOptionType.String,
-    },
-  ],
-  devOnly: true,
-
-  callback: async (client, interaction) => {
-    try {
-      await interaction.deferReply();
-
-      const contentUser = interaction.options.get("content").value;
-
-      await interaction.editReply(`${contentUser}`);
-      
-    } catch (error) {
-      console.log(`chat-by-bot: ${error}`);
-    }
-  },
-};
 client.once('ready', () => {
   console.log(`\x1b[36m%s\x1b[0m`, `|    ✅ Bot is ready as ${client.user.tag}`);
   console.log(`\x1b[36m%s\x1b[0m`, `|    ✨HAPPY NEW YEAR MY DEAR FAMILY`);
